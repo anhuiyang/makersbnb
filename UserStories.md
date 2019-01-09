@@ -2,32 +2,34 @@
 
 ```
 As a User,
-I want to be able to create an account
+I want to be able to list a new space
 ```
 ```
 As a User,
-I want to be able to log in
+I want to be able to list multiple spaces
 ```
 ```
 As a User,
-I want to be able to browse available locations
-```
-```
-As a HouseHolder,
-I want to be able to put my house up for listing
+I want to be able to describe my space (Name, Description, Price)
 ```
 ```
 As a User,
-I want to be able to select a house to book
+I want to be able to offer a range of dates of availability
+```
+```
+As a User(Renter),
+I want to be able to request to hire a space
 ```
 ```
 As a User,
-I want to be able to see all my orders
+I want to be able to approve a potential renter
 ```
 ```
-As a User,
-I want to see pictures of houses
+As a Dev,
+I want users to be unable to double book
+```  
 ```
+As a Dev,
+I want a booking to be available until User(Renter) has confirmed a reservation
+request
 ```
-As a User,
-I 
