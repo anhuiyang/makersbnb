@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: airbnb_development
+  pool: 2
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: airbnb_test
+  pool: 2
