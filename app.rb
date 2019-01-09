@@ -2,8 +2,10 @@ require 'sinatra'
 require 'sinatra/activerecord'
 
 class App < Sinatra::Base
+  enable :sessions
 
   get '/' do
+
     erb :index
   end
 
@@ -12,6 +14,13 @@ class App < Sinatra::Base
   end
 
   post '/log_in' do
-    'Hi user@email.com'
+    p params
+    session[:email] = params[:email]
+    redirect '/profile'
+  end
+
+  get '/profile' do
+    @email = session[:email]
+    erb :profile
   end
 end
