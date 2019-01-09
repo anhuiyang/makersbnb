@@ -2,6 +2,10 @@
 
 ```
 As a User,
+I want to be able to Sign Up
+```
+```
+As a User,
 I want to be able to list a new space
 ```
 ```
@@ -10,7 +14,9 @@ I want to be able to list multiple spaces
 ```
 ```
 As a User,
-I want to be able to describe my space (Name, Description, Price)
+I want to be able to describe my space* Name
+* Description
+* Price
 ```
 ```
 As a User,
