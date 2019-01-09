@@ -38,6 +38,6 @@ request
 ```
 ---
 
-### Domain Model
+## Domain Model
 
-![image](https://user-images.githubusercontent.com/44489447/50907218-bdf47600-141e-11e9-96f5-03def7a339d0.png
+![image](https://user-images.githubusercontent.com/44489447/50907218-bdf47600-141e-11e9-96f5-03def7a339d0.png)
