@@ -5,11 +5,11 @@ class App < Sinatra::Base
   enable :sessions
 
   get '/' do
-    erb(:index, :layout => :layout)
+    erb :index
   end
 
   get '/signup' do
-    erb(:signup, :layout => :layout)
+    erb :signup
   end
 
   post '/signup' do
@@ -30,6 +30,6 @@ class App < Sinatra::Base
   get '/profile' do
     @email = session[:email]
     @password = session[:password]
-    erb(:profile, :layout => :layout)
+    erb :profile
   end
 end
