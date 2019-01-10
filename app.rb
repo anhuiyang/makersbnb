@@ -32,4 +32,8 @@ class App < Sinatra::Base
     @password = session[:password]
     erb :profile
   end
+
+  get '/list' do
+    erb :list
+  end
 end
