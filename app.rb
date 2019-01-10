@@ -32,4 +32,19 @@ class App < Sinatra::Base
     @password = session[:password]
     erb :profile
   end
+
+  get '/properties' do
+    erb :properties
+  end
+
+  get '/properties/:id' do
+    @property_name = 'Jonestown'
+    @property_info = 'A great place to take the kids, try the cool aid'
+    #@property = Space.find(params[:id])
+    erb :property
+  end
+
+  get '/request' do
+    erb :request
+  end
 end
