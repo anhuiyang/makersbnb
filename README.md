@@ -1,6 +1,41 @@
 # Water Spillers Team working on Makers BnB project built with Ruby, Sinatra.
 ---
 
+### Program Outline ###
+
+A program to enable members of the public to list a property or properties to be rented by other Users.
+
+### What you need installed ###
+
+```
+- Ruby
+- Sinatra
+- ActiveRecord/PSQL
+- A text editor - Atom used in production
+- RSpec
+- Capybara
+- Rack
+```
+
+### Gems ###
+
+```
+gem 'activerecord'
+gem 'pg'
+gem 'pry', '~> 0.12.2'
+gem 'shotgun', '~> 0.9.2'
+gem 'sinatra', '~> 2.0'
+gem 'sinatra-activerecord'
+gem 'rack'
+gem 'rake'
+gem 'capybara', '~> 3.12'
+gem 'database_cleaner'
+gem 'rspec', '~> 3.8'
+gem 'rubocop', '0.56.0'
+gem 'simplecov', require: false
+gem 'simplecov-console', require: false
+```
+
 ### User Stories
 
 ```
