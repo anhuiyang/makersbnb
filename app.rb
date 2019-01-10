@@ -36,4 +36,18 @@ class App < Sinatra::Base
   get '/list' do
     erb :list
   end
+
+  post '/list' do
+    session[:name] = params[:name]
+    session[:description] = params[:description]
+    session[:price] = params[:price]
+    redirect '/listings'
+  end
+
+  get '/listings' do
+    @name = session[:name]
+    @description = session[:description]
+    @price = session[:price]
+    erb :listings
+  end
 end
