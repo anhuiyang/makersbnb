@@ -65,6 +65,17 @@ I want a booking to appear as available until I have approved a customer's reque
 ```
 ---
 
-### Domain Model ###
+###  Models ###
+
+##Domain Model ##
 
 ![image](https://user-images.githubusercontent.com/44489447/50907218-bdf47600-141e-11e9-96f5-03def7a339d0.png)
+
+##Class Model##
+
+![image](https://user-images.githubusercontent.com/44489447/50969697-2c950a80-14d7-11e9-884b-93e5d1572051.png)
+
+
+### Approach ###
+
+Our approach to this project was two fold, we wanted to focus on the learning objective of the project and really work on and take note of how we worked as a team. We implemented a Trello board
