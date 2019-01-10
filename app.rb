@@ -14,7 +14,6 @@ class App < Sinatra::Base
   end
 
   post '/log_in' do
-    p params
     session[:email] = params[:email]
     redirect '/profile'
   end
