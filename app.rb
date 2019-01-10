@@ -18,6 +18,15 @@ class App < Sinatra::Base
     redirect '/profile'
   end
 
+  get '/log_in' do
+    erb :login
+  end
+
+  post '/log_in' do
+    session[:email] = params[:email]
+    redirect '/profile'
+  end
+
   get '/profile' do
     @email = session[:email]
     @password = session[:password]
