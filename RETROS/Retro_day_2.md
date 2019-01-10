@@ -16,7 +16,7 @@
 - Mobbing - from one driver was seen as really good when mobbing on activerecord, from the other was seen as harder due to deciding who to listen to.
 
 
-### what could have gone better or needs to change ###
+### What could have gone better or needs to change ###
 
 - Debugging - pairs are to spend no more than 15 mins problem solving and then grab the float or other pair depending on need. Suggest process is float first then pull in second pair to decrease chance of workflow obstruction.
 - Communicate when we have problems faster
