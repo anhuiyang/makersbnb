@@ -1,0 +1,26 @@
+# development:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: airbnb_development
+#   pool: 2
+#
+# test:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: airbnb_test
+#   pool: 2
+
+
+  default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 2
+  host: localhost
+
+development:
+  <<: *default
+  database: airbnb_development
+
+test: &test
+  <<: *default
+  database: airbnb_test

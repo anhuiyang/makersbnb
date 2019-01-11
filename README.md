@@ -1,6 +1,41 @@
 # Water Spillers Team working on Makers BnB project built with Ruby, Sinatra.
 ---
 
+### Program Outline ###
+
+A program to enable members of the public to list a property or properties to be rented by other Users.
+
+### What you need installed ###
+
+```
+- Ruby
+- Sinatra
+- ActiveRecord/PSQL
+- A text editor - Atom used in production
+- RSpec
+- Capybara
+- Rack
+```
+
+### Gems ###
+
+```
+gem 'activerecord'
+gem 'pg'
+gem 'pry', '~> 0.12.2'
+gem 'shotgun', '~> 0.9.2'
+gem 'sinatra', '~> 2.0'
+gem 'sinatra-activerecord'
+gem 'rack'
+gem 'rake'
+gem 'capybara', '~> 3.12'
+gem 'database_cleaner'
+gem 'rspec', '~> 3.8'
+gem 'rubocop', '0.56.0'
+gem 'simplecov', require: false
+gem 'simplecov-console', require: false
+```
+
 ### User Stories
 
 ```
@@ -65,6 +100,21 @@ I want a booking to appear as available until I have approved a customer's reque
 ```
 ---
 
+
+
 ### Domain Model ###
 
 ![image](https://user-images.githubusercontent.com/44489447/50907218-bdf47600-141e-11e9-96f5-03def7a339d0.png)
+
+### Class Model ###
+
+![image](https://user-images.githubusercontent.com/44489447/50969697-2c950a80-14d7-11e9-884b-93e5d1572051.png)
+
+
+### Approach ###
+
+Our approach to this project was two fold, we wanted to focus on the learning objective of the project and really work on and take note of how we worked as a team. We implemented a Trello board to organise and manage our work and used its features to assign tasks and direct workflow.
+
+We also implemented two models (see above) at the start of the process to guide our development. Initially planning on using three classes as we modelled the programs interactions we found the need for a fourth class, the calendar class.
+
+Further as a group we decided to focus on the learnings of collaborative growth, methodical approach and the ability to TDD anything. By focusing on these goals we aimed to enhance our learning experience. The testing approach has gone well with our first feature tests passed and refactored by the morning of Day 2.

@@ -41,13 +41,24 @@ class App < Sinatra::Base
     session[:name] = params[:name]
     session[:description] = params[:description]
     session[:price] = params[:price]
-    redirect '/listings'
+    redirect '/properties'
   end
-
-  get '/listings' do
+  get '/properties' do
     @name = session[:name]
     @description = session[:description]
     @price = session[:price]
-    erb :listings
+    erb :properties
+  end
+
+  get '/properties/:id' do
+    @property_name = session[:name]
+    @property_info = session[:description]
+    @property_rate = session[:price]
+    #@property = Space.find(params[:id])
+    erb :property
+  end
+
+  get '/request' do
+    erb :request
   end
 end
