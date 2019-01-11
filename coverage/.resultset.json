@@ -69,15 +69,12 @@
       ],
       "/Users/huianyang/Project/makersbnb/spec/features/booking_spec.rb": [
         1,
-        null,
-        null,
         1,
         1,
         1,
         1,
         1,
         1,
-        null,
         1,
         null,
         null
@@ -98,7 +95,6 @@
         1,
         1,
         null,
-        null,
         1,
         1,
         1,
@@ -115,7 +111,6 @@
       ],
       "/Users/huianyang/Project/makersbnb/spec/features/user_login_spec.rb": [
         1,
-        null,
         1,
         1,
         1,
@@ -125,7 +120,6 @@
       ],
       "/Users/huianyang/Project/makersbnb/spec/features/user_logout_spec.rb": [
         1,
-        null,
         1,
         1,
         1,
@@ -149,6 +143,6 @@
         null
       ]
     },
-    "timestamp": 1547205712
+    "timestamp": 1547207415
   }
 }

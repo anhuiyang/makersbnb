@@ -54,7 +54,7 @@ class App < Sinatra::Base
     @name = session[:name]
     @description = session[:description]
     @price = session[:price]
-    #@property = Space.find(params[:id])
+    # @property = Space.find(params[:id])
     erb :property
   end
 
