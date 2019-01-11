@@ -1,9 +1,12 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require './models/space.rb'
+require './lib/account'
+
+set :database_file, 'config/database.yml'
 
 class App < Sinatra::Base
   enable :sessions
+  set :method_override, true
 
   get '/' do
     erb :index
@@ -14,9 +17,8 @@ class App < Sinatra::Base
   end
 
   post '/signup' do
-    session[:email] = params[:email]
-    session[:password] = params[:password]
-    redirect '/profile'
+    session[:user] = Account.create ({:email => params[:email], :password => params[:password]})
+    redirect '/profile/:id'
   end
 
   get '/log_in' do
@@ -25,12 +27,14 @@ class App < Sinatra::Base
 
   post '/log_in' do
     session[:email] = params[:email]
-    redirect '/profile'
+    session[:user] = Account.find_by(email: session[:email])
+    p session[:user]
+    redirect '/profile/:id'
   end
 
-  get '/profile' do
-    @email = session[:email]
-    @password = session[:password]
+  get '/profile/:id' do
+    @id = session[:user].id
+    @account = Account.find(@id)
     erb :profile
   end
 
@@ -49,7 +53,6 @@ class App < Sinatra::Base
   end
 
   post '/properties/:id' do
-    p params[:id]
     session[:space] = Spaces.find(params[:id])
     redirect '/property/:id'
   end
