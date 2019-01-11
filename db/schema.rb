@@ -26,4 +26,9 @@ ActiveRecord::Schema.define(version: 2019_01_11_105620) do
     t.float "rate"
   end
 
+  create_table "user", force: :cascade do |t|
+    t.string "email"
+    t.string "password"
+  end
+
 end
