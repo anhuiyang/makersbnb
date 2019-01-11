@@ -1,12 +1,16 @@
 <div>
-  <h1> <%= @name %>  </h1>
+  <h1> <%= @space.name %>  </h1>
 </div><br>
 <div>
-  <h1> <%= @description %> </h1>
+  <h1> <%= @space.description %> </h1>
 </div>
 <div>
-  <h2> £<%=@price%> per night </h2>
+  <h2> £<%=@space.rate%> per night </h2>
 
 <form action='/request' method='get'>
   <input type='submit' value='Book now'>
+  </form>
+
+<form action='/properties' method='get'>
+  <input type='submit' value = 'More Properties'>
   </form>
