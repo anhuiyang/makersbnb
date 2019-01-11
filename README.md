@@ -115,13 +115,17 @@ The above model was created to enhance on the previous model to give us a cleare
 ```
 ### Approach ###
 
-Our approach to this project was two fold, we wanted to focus on the learning objective of the project and really work on and take note of how we worked as a team. We implemented a Trello board to organise and manage our work and used its features to assign tasks and direct workflow.
+Our approach to this project was to focus on the learning objective of the project and really work on and take note of how we worked as a team. We implemented a Trello board to organise and manage our work and used its features to assign tasks and direct workflow.
 
 We also implemented two models (see above) at the start of the process to guide our development. Initially planning on using three classes as we modelled the programs interactions we found the need for a fourth class, the calendar class.
 
 Further as a group we decided to focus on the learnings of collaborative growth, methodical approach and the ability to TDD anything. By focusing on these goals we aimed to enhance our learning experience. The testing approach has gone well with our first feature tests passed and refactored by the morning of Day 2.
 
 After the day 2 retro our focus was on implementing functionality and a minimum viable product to demo at the end of the day. This means that our app lacks any form of design or style, but we are happy that the app functions as it should currently and we can demo future features as part of our MVP.
+
+By Day 3, we had run into numerous problems due to our decision to use ActiveRecord over Datamapper, the debugging necessary to make ActiveRecord work was a long process and ate into much of our time. Sadly this focus on simply getting the program to function led to a negligence of the tests and keeping them working, as such the tests currently do not pass, due to the lack of a fully functioning test database for the most part as well as smaller changes like button or link names. 
+
+
 
 ### User Journey ###
 ```
