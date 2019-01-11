@@ -1,20 +1,14 @@
-<h1> This is a property </h1>
-<div>
-<img src="https://scentofagamer.files.wordpress.com/2015/06/forest_avacynrestored_eytanzana.jpg">
-<br>
-<h1> You want to book this, don't you, Onkar? </h1>
-<br>
-<h2>Your Listing</h2>
-<div>
-  <h3> Property Name: <%=@name%> </h3>
-  <%=@description%>
+
+<%@spaces.each do |space|%>
+  <h2> Property Name: </h2>
+  <h3> <%=space.name%>  </h3>
+  <%= space.description %>
   <br>
   <br>
-  £<%=@price%> per night
-</div>
-<br>
-<form action="/properties/:id" method="get">
-  <input type='submit' value='More Information?'>
+  Price:
+  <h4> £<%=space.rate%> per night </h4>
+  <form action="/properties/<%=space.id%>" method="post">
+    <input type='submit' value='More Information?'>
   </form>
-<br>
-</div>
+  <br>
+<%end%>

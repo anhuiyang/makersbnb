@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require './models/space.rb'
 
 class App < Sinatra::Base
   enable :sessions
@@ -38,23 +39,24 @@ class App < Sinatra::Base
   end
 
   post '/list' do
-    session[:name] = params[:name]
-    session[:description] = params[:description]
-    session[:price] = params[:price]
-    redirect '/properties'
+    session[:space] = Spaces.create(name: params[:name], description: params[:description], rate: params[:price])
+    redirect '/property/:id'
   end
+
   get '/properties' do
-    @name = session[:name]
-    @description = session[:description]
-    @price = session[:price]
+    @spaces = Spaces.all
     erb :properties
   end
 
-  get '/properties/:id' do
-    @name = session[:name]
-    @description = session[:description]
-    @price = session[:price]
-    #@property = Space.find(params[:id])
+  post '/properties/:id' do
+    p params[:id]
+    session[:space] = Spaces.find(params[:id])
+    redirect '/property/:id'
+  end
+
+  get '/property/:id' do
+    @id = session[:space].id
+    @space = Spaces.find(@id)
     erb :property
   end
 
