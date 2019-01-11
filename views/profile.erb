@@ -1,6 +1,9 @@
 <div>
   <h2>Welcome <%= @email %></h2>
   <br>
+  <form action="/list" method="get">
+    <input type="submit" value="List A Space">
+  </form>
   <br>
   <form action="/" method="get">
     <input type="submit" value="Log Out">
