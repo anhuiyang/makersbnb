@@ -1,9 +1,11 @@
 <div>
-  <h1> <%= @property_name %>  </h1>
+  <h1> <%= @name %>  </h1>
 </div><br>
 <div>
-  <h1> <%= @property_info %> </h1>
+  <h1> <%= @description %> </h1>
 </div>
+<div>
+  <h2> £<%=@price%> per night </h2>
 
 <form action='/request' method='get'>
   <input type='submit' value='Book now'>

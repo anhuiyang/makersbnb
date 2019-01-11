@@ -51,9 +51,9 @@ class App < Sinatra::Base
   end
 
   get '/properties/:id' do
-    @property_name = session[:name]
-    @property_info = session[:description]
-    @property_rate = session[:price]
+    @name = session[:name]
+    @description = session[:description]
+    @price = session[:price]
     #@property = Space.find(params[:id])
     erb :property
   end

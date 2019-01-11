@@ -12,7 +12,7 @@ feature 'Listing a Space' do
     fill_in :description, with: "A long description"
     fill_in :price, with: "87"
     click_on 'Submit'
-    expect(page.current_path).to eq("/listings")
+    expect(page.current_path).to eq("/properties")
     expect(page).to have_content ("Manor Frenzy")
     expect(page).to have_content ("A long description")
     expect(page).to have_content ("£87 per night")
