@@ -1,5 +1,4 @@
 require_relative 'web_helper'
-
 feature 'Logging out' do
   scenario 'User can log out' do
     log_in
