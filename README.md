@@ -118,3 +118,26 @@ Our approach to this project was two fold, we wanted to focus on the learning ob
 We also implemented two models (see above) at the start of the process to guide our development. Initially planning on using three classes as we modelled the programs interactions we found the need for a fourth class, the calendar class.
 
 Further as a group we decided to focus on the learnings of collaborative growth, methodical approach and the ability to TDD anything. By focusing on these goals we aimed to enhance our learning experience. The testing approach has gone well with our first feature tests passed and refactored by the morning of Day 2.
+
+After the day 2 retro our focus was on implementing functionality and a minimum viable product to demo at the end of the day. This means that our app lacks any form of design or style, but we are happy that the app functions as it should currently and we can demo future features as part of our MVP.
+
+### User Journey ###
+```
+Here the user logs in clicking log in
+```
+![screenshot 2019-01-11 at 15 18 06](https://user-images.githubusercontent.com/44489447/51042521-7273d080-15b4-11e9-9365-1cf6f8d2973d.png)
+
+```
+Here the user inputs their details and they can login if they have signed up.
+```
+![screenshot 2019-01-11 at 15 19 00](https://user-images.githubusercontent.com/44489447/51042666-c1ba0100-15b4-11e9-8d17-274a51d7a76e.png)
+
+
+```
+Here the user sees their basic profile and options. Giving them the options to list a space, log out or Browse available properties.
+```
+![screenshot 2019-01-11 at 15 19 09](https://user-images.githubusercontent.com/44489447/51042745-f928ad80-15b4-11e9-8cae-170da91dd0f7.png)
+
+```
+Here the user has chosen to browse the available properties.
+```
