@@ -4,6 +4,14 @@
 <br>
 <h1> You want to book this, don't you, Onkar? </h1>
 <br>
+<h2>Your Listing</h2>
+<div>
+  <h3> Property Name: <%=@name%> </h3>
+  <%=@description%>
+  <br>
+  <br>
+  £<%=@price%> per night
+</div>
 <br>
 <form action="/properties/:id" method="get">
   <input type='submit' value='More Information?'>
