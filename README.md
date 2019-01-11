@@ -1,4 +1,4 @@
-# Water Spillers Team working on Makers BnB project built with Ruby, Sinatra.
+# Team Water Spillers working on Makers BnB project built with Ruby, Sinatra.
 ---
 
 ### Program Outline ###
@@ -102,15 +102,17 @@ I want a booking to appear as available until I have approved a customer's reque
 
 
 
-### Domain Model ###
+### Models ###
 
 ![image](https://user-images.githubusercontent.com/44489447/50907218-bdf47600-141e-11e9-96f5-03def7a339d0.png)
-
-### Class Model ###
+```
+The above model was implemented at the start of the project to help decide workflow.
+```
 
 ![image](https://user-images.githubusercontent.com/44489447/50969697-2c950a80-14d7-11e9-884b-93e5d1572051.png)
-
-
+```
+The above model was created to enhance on the previous model to give us a clearer picture of how we predicted the final product to work.
+```
 ### Approach ###
 
 Our approach to this project was two fold, we wanted to focus on the learning objective of the project and really work on and take note of how we worked as a team. We implemented a Trello board to organise and manage our work and used its features to assign tasks and direct workflow.
@@ -141,3 +143,43 @@ Here the user sees their basic profile and options. Giving them the options to l
 ```
 Here the user has chosen to browse the available properties.
 ```
+![screenshot 2019-01-11 at 15 59 21](https://user-images.githubusercontent.com/44489447/51044814-f2e90000-15b9-11e9-988e-93a0bc8627f2.png)
+
+```
+Clicking on more information, currently displays the same short description. Future work would enable a short description on browse page leading to longer information on dedicated property page.
+```
+![screenshot 2019-01-11 at 16 02 05](https://user-images.githubusercontent.com/44489447/51044947-452a2100-15ba-11e9-90bd-7b28ad80a511.png)
+
+```
+Here we have two options, we can return to the property list, or we can request to book the property, the user has selected to book the property.
+```
+![screenshot 2019-01-11 at 16 04 19](https://user-images.githubusercontent.com/44489447/51045075-9fc37d00-15ba-11e9-8b07-573cdbaa4b6a.png)
+
+```
+And is returned a message to confirming the request has been sent to the owner. With the option to go to the homepage.
+```
+### User Experience ###
+```
+Not very good
+```
+### How we would move forward ###
+
+If we had more time there are several functionalities we would fully implement to create an app that fulfils the basic specifications.
+
+- We would implement a booking confirm method that is available to the booker so bookings can be confirmed to the owner.
+
+- We would implement a calendar class as shown in the class model to fulfil the need for date blocking and avoid properties becoming double booked.
+
+- We would implement an associations system for our spaces so that each property is assigned to the correct user within the database, as currently a user can list multiple spaces but they are not registered to the user.
+
+- We would create either a new class or a child class of user which contains all the necessary methods for listing and  associating properties, as well as being able to confirm bookings.
+
+- We would re-write the Domain model to be more reflective of the finished product.
+
+- We would update the Class model to be more reflective of the program.
+
+- We would update our tests to work, lint our project and complete final refactoring.
+
+### Reflections ###
+
+- Please see folder called RETROS for team reflections at the end of each day.
