@@ -1,6 +1,6 @@
 # Team Water Spillers working on Makers BnB project built with Ruby, Sinatra.
 ---
-![Trello Board](https://trello.com/b/Z2OacBVf/airbnb)
+[Trello Board](https://trello.com/b/Z2OacBVf/airbnb)
 ### Program Outline ###
 
 A program to enable members of the public to list a property or properties to be rented by other Users.
